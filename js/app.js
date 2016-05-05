@@ -13,13 +13,20 @@ $(document).ready(function() {
 	    .mousedown(function() {
 	    	$('#ready').hide();
 	    	$('#throw').show();
-	    	$('#hadouken').show();
+	    	$('#hadouken').finish().show().animate(
+  				{'left': '65em'},
+  				500,
+  				function() {
+    			$(this).hide();
+    			$(this).css('left', '30em');
+  				}
+  				);
 	    	// yell hadouken
 	    	// hadouken move
 	 })
 	    .mouseup(function() {
 	    	$('#throw').hide();
-	    	$('#hadouken').hide();
+	    	// $('#hadouken').hide();
 	    	$('#ready').show();
 
 	 });
