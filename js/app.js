@@ -7,7 +7,20 @@ $(document).ready(function() {
 		$('#ready').show();
 	})
 	    .mouseleave(function() {
-         $('#ready').hide();
-         $('#still').show();
-     });
+        	$('#ready').hide();
+        	$('#still').show();
+     })
+	    .mousedown(function() {
+	    	$('#ready').hide();
+	    	$('#throw').show();
+	    	$('#hadouken').show();
+	    	// yell hadouken
+	    	// hadouken move
+	 })
+	    .mouseup(function() {
+	    	$('#throw').hide();
+	    	$('#hadouken').hide();
+	    	$('#ready').show();
+
+	 });
 });
