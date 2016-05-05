@@ -31,6 +31,24 @@ $(document).ready(function() {
 	    	$('#ready').show();
 
 	 });
+
+
+	$(document).keydown(function (e) {
+			if(e.keyCode ==88 ) {
+				$('#still').hide();
+				$('#ready').hide();
+				$('#throw').hide();
+				$('#cool').show();
+			}
+	    })
+			.keyup(function(e){
+				if(e.keyCode ==88 ) {
+				$('#cool').hide();
+				$('#still').show();
+				}
+			});
+
+	    	// sound
 	function playHadouken () {
   		$('#hadouken-sound')[0].volume = 0.5;
   		$('#hadouken-sound')[0].load();
