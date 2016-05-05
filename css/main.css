@@ -12,3 +12,15 @@ body {
 	margin-bottom: 8em;
 	/*how can i gurantee top and bottom are both same size no scrolling?*/
 }
+
+#fighter-box {
+	border: .1em solid blue;
+	height: 29em;
+	width: 30em;
+	margin-left: 10em;
+}
+
+.ryu {
+	margin-left: -7em;
+	margin-top: -2em;
+}
