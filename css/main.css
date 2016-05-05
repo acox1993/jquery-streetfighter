@@ -1,3 +1,7 @@
+* {
+  outline: red 1px solid;
+}
+
 body {
 	background-color: #000;
 }
@@ -7,9 +11,14 @@ body {
 	/*border-top: .5em solid red;
 	border-bottom: .5em solid red;*/
 	height: 29em;
-	width: 100%;
+	/*width: 100%;*/
 	margin-top: 8em;
-	margin-bottom: 8em;
+/*	margin-bottom: 8em;
+*/	padding-left: 100px;
+  	min-width: 1200px;
+  	/*height: 500px;*/
+  	position: relative;
+  	z-index: 1;
 	/*how can i gurantee top and bottom are both same size no scrolling?*/
 }
 
@@ -17,10 +26,28 @@ body {
 	border: .1em solid blue;
 	height: 29em;
 	width: 30em;
-	margin-left: 10em;
+	/*margin-left: 10em;*/
+	float: left;
+
 }
 
 .ryu {
 	margin-left: -7em;
 	margin-top: -2em;
+}
+
+#hadouken, #ready, #ryu-still, #ryu-throwing {
+  background-repeat: no-repeat;
+}
+
+#hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+ /* display: none;*/
+  float: left;
+  margin-top: 10em;
+  margin-left: 25em;
+  position: absolute;
+  z-index: 10;
 }
