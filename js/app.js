@@ -55,7 +55,11 @@ $(document).ready(function() {
 				$('#still').hide();
 				$('#ready').hide();
 				$('#throw').hide();
+				$('#hulk-still').hide();
+				$('#hulk-ready').hide();
+				$('#hulk-throw').hide();
 				$('#cool').show();
+				$('#hulk-cool').show();
 			}
 	    })
 			.keyup(function(e){
@@ -63,7 +67,11 @@ $(document).ready(function() {
 				$('#cool').hide();
 				$('#ready').hide();
 				$('#throw').hide();
+				$('#hulk-cool').hide();
+				$('#hulk-ready').hide();
+				$('#hulk-throw').hide();
 				$('#still').show();
+				$('#hulk-still').show();
 				}
 			});
 
