@@ -4,11 +4,16 @@ $(document).ready(function() {
 	// $('#throw').hide();
 	$('#fighter-box').mouseenter(function() {
 		$('#still').hide();
+		$('.how-to').hide();
+		$('#hulk-still').hide();
 		$('#ready').show();
+		$('#hulk-ready').show();
 	})
 	    .mouseleave(function() {
         	$('#ready').hide();
+        	$('#hulk-ready').hide();
         	$('#still').show();
+        	$('#hulk-still').show();
      })
 	    .mousedown(function() {
 	    	playHadouken();
@@ -23,12 +28,24 @@ $(document).ready(function() {
     			$(this).css('left', '30em');
   				}
   				);
-	    	// yell hadouken
+	    	$('#hulk-ready').hide();
+	    	$('#hulk-throw').show();
+	    	// hadouken move
+	    	$('#hulk-hadouken').finish().show().animate(
+  				{'left': '20em'},
+  				500,
+  				function() {
+    			$(this).hide();
+    			$(this).css('left', '45em');
+  				}
+  				);
 	 })
 	    .mouseup(function() {
 	    	$('#throw').hide();
+	    	$('#hulk-throw').hide();
 	    	// $('#hadouken').hide();
 	    	$('#ready').show();
+	    	$('#hulk-ready').show();
 
 	 });
 
@@ -44,6 +61,8 @@ $(document).ready(function() {
 			.keyup(function(e){
 				if(e.keyCode ==88 ) {
 				$('#cool').hide();
+				$('#ready').hide();
+				$('#throw').hide();
 				$('#still').show();
 				}
 			});

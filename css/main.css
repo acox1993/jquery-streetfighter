@@ -7,7 +7,11 @@ body {
 }
 
 #white {
-	background-color: white;
+	/*background-color: white;*/
+	background-image: url('../images/background.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	/*border-top: .5em solid red;
 	border-bottom: .5em solid red;*/
 	height: 29em;
@@ -28,7 +32,8 @@ body {
 	width: 30em;
 	/*margin-left: 10em;*/
 	float: left;
-	/*overflow: hidden;*/
+	overflow: hidden;
+	display:inline-block;
 
 }
 
@@ -41,7 +46,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#ready, #throw, #cool {
+#ready, #throw, #cool, .hulk {
   display: none;
 }
 
@@ -55,4 +60,55 @@ body {
   left: 30em;
   position: absolute;
   z-index: 10;
+}
+
+#other {
+	display: inline-block;
+	height: 29em;
+	width: 40em;
+	float: right;
+	/*background-color: #fff;*/
+	margin-right: 10em;
+	color: #fff;
+	padding-top: 7em;
+}
+.how-to {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+}
+#mouse {
+	text-align: left;
+}
+#click {
+	text-align: right;
+}
+
+.hulk {
+	filter: hue-rotate(90deg);
+	 -moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+     filter: FlipH;
+     -ms-filter: "FlipH";
+     margin-top: -9em;
+     margin-right:-5em;
+}
+#hulk-hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: right;
+  top: 9em;
+  left: 45em;
+  position: absolute;
+  z-index: 10;
+  filter: hue-rotate(90deg);
+	 -moz-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+     filter: FlipH;
+     -ms-filter: "FlipH";
 }
