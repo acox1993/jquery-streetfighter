@@ -11,8 +11,10 @@ $(document).ready(function() {
         	$('#still').show();
      })
 	    .mousedown(function() {
+	    	playHadouken();
 	    	$('#ready').hide();
 	    	$('#throw').show();
+	    	// hadouken move
 	    	$('#hadouken').finish().show().animate(
   				{'left': '65em'},
   				500,
@@ -22,7 +24,6 @@ $(document).ready(function() {
   				}
   				);
 	    	// yell hadouken
-	    	// hadouken move
 	 })
 	    .mouseup(function() {
 	    	$('#throw').hide();
@@ -30,4 +31,9 @@ $(document).ready(function() {
 	    	$('#ready').show();
 
 	 });
+	function playHadouken () {
+  		$('#hadouken-sound')[0].volume = 0.5;
+  		$('#hadouken-sound')[0].load();
+  		$('#hadouken-sound')[0].play();
+}
 });

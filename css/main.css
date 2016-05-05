@@ -23,7 +23,7 @@ body {
 }
 
 #fighter-box {
-	border: .1em solid blue;
+	/*border: .1em solid blue;*/
 	height: 29em;
 	width: 30em;
 	/*margin-left: 10em;*/
