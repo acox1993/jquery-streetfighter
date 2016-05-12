@@ -2,9 +2,13 @@ $(document).ready(function() {
 	// $('#ready').hide();
 	// $('#cool').hide();
 	// $('#throw').hide();
+	$(document).dblclick(function() {
+		$('.how-to').hide();
+	});
+	
 	$('#fighter-box').mouseenter(function() {
 		$('#still').hide();
-		$('.how-to').hide();
+		// $('.how-to').hide();
 		$('#hulk-still').hide();
 		$('#ready').show();
 		$('#hulk-ready').show();
@@ -12,6 +16,7 @@ $(document).ready(function() {
 	    .mouseleave(function() {
         	$('#ready').hide();
         	$('#hulk-ready').hide();
+        	// $('.how-to').hide();
         	$('#still').show();
         	$('#hulk-still').show();
      })
